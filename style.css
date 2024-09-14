@@ -1,0 +1,135 @@
+/* fonts */
+@import url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/* global */
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    place-content: center;
+    color: hsl(0, 0%, 7%);
+    font-family: 'Figtree', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: hsl(47, 88%, 63%);
+}
+
+/* main */
+main {
+    background-color: hsl(0, 0%, 100%);
+    width: 20.4rem;
+    height: 31.3rem;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 0.5rem 0.5rem hsl(0, 0%, 7%);
+
+}
+
+@media (min-width: 320px) {
+    main {
+        width: calc(20.4rem + (24rem - 20.4rem) * ((100vw - 320px) / (1280px - 320px)));
+        height: calc(31.3rem + (32.625rem - 31.3rem) * ((100vw - 320px) / (1280px - 320px)));
+    }
+}
+
+@media (min-width: 1280px) {
+    main {
+        width: 24rem;
+        height: 32.625rem;
+    }
+}
+
+
+/* blog */
+.blog {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    min-height: 12.6rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+}
+
+.blog img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* article */
+article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: hsl(47, 88%, 63%);
+    line-height: 150%;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+    line-height: 150%;
+}
+
+a:hover,
+a:focus {
+    color: hsl(47, 88%, 63%);
+    cursor: url(./assets/images/Pointer.png), auto;
+}
+
+.publish {
+    font-size: 0.75rem;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.description {
+    line-height: 150%;
+    font-size: 0.875rem;
+    color: hsl(0, 0%, 42%);
+}
+
+/* footer */
+footer {
+    margin-top: 1.5rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 2rem;
+}
+
+.profile figcaption {
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 150%;
+    margin-left: 0.75rem;
+}
