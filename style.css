@@ -81,8 +81,8 @@ article {
 .category {
     display: inline-block;
     padding: 0.25rem 0.75rem;
+    line-height: 1.5;
     background-color: hsl(47, 88%, 63%);
-    line-height: 150%;
     border-radius: 0.25rem;
     font-size: 0.75rem;
     font-weight: 900;
@@ -91,9 +91,9 @@ article {
 a {
     font-size: 1.25rem;
     font-weight: 900;
+    line-height: 1.5;
     text-decoration: none;
     color: hsl(0, 0%, 7%);
-    line-height: 150%;
 }
 
 a:hover,
@@ -103,14 +103,14 @@ a:focus {
 }
 
 .publish {
+    line-height: 1.5;
     font-size: 0.75rem;
-    line-height: 150%;
     font-weight: bold;
 }
 
 .description {
-    line-height: 150%;
     font-size: 0.875rem;
+    line-height: 1.5;
     color: hsl(0, 0%, 42%);
 }
 
@@ -129,8 +129,8 @@ footer {
 }
 
 .profile figcaption {
+    line-height: 1.5;
     font-size: 0.875rem;
     font-weight: 900;
-    line-height: 150%;
     margin-left: 0.75rem;
 }
